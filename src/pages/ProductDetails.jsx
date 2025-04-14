@@ -40,10 +40,11 @@ const ProductDetails = () => {
                             flexDirection: "column",
                             justifyContent: "center",
                             border: "1px solid #ddd",
+                            padding: "20px",
                         }}
                     >
                         <h2>{product.title}</h2>
-                        <h3>${product.price}</h3>
+                        <h3>Price: ${product.price}</h3>
                         <p>{product.description}</p>
                     </div>
                 </div>

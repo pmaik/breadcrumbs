@@ -1,6 +1,66 @@
-.App {
-    text-align: center;
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --heading-color: #444444;
+}
+
+[data-theme="dark"] {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --heading-color: #dddddd;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+}
+h1,
+h3,
+h3 {
+    color: var(--heading-color);
+}
+
+.main {
     padding: 0 20px 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    background-color: #ddd;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #551a8b;
+}
+.nav-links a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.theme-toggle-btn {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    background-color: darkgray;
+}
+.theme-toggle-btn:hover {
+    background-color: gray;
 }
 
 .product-grid {
@@ -31,15 +91,11 @@
 .breadcrumbs {
     display: flex;
     text-transform: capitalize;
-    position: sticky;
-    top: 0;
-    background-color: #ddd;
-    padding: 10px 20px;
-    border-radius: 4px;
 }
 
 .breadcrumbs a {
     text-decoration: none;
+    color: #551a8b;
 }
 .breadcrumbs a:hover {
     text-decoration: underline;

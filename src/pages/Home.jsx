@@ -41,7 +41,9 @@ const Home = () => {
             )}
 
             <Link to="/products">
-                <button style={{ padding: 10, width: "100%" }}>
+                <button
+                    style={{ padding: 10, width: "100%", cursor: "pointer" }}
+                >
                     View All Products
                 </button>
             </Link>

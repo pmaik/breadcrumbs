@@ -20,7 +20,9 @@ const Breadcrumbs = () => {
 
                 return (
                     <span key={path}>
-                        <span style={{ margin: "0 5px" }}>&gt;</span>
+                        <span style={{ margin: "0 5px", color: "#333333" }}>
+                            &gt;
+                        </span>
                         {isLast ? (
                             <span className="active-breadcrumbs">{path}</span>
                         ) : (
